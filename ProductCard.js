@@ -31,7 +31,7 @@ const ProductCard = ({
                         size={24}
                         color={colorScheme === "light" ? "black" : "white"}
                         onPress={() => setCount(count - 1)} />
-                    <Text>{count}</Text>
+                    <Text className="text-sm dark:text-white">{count}</Text>
                     <AntDesign name='pluscircleo'
                         size={24}
                         color={colorScheme === "light" ? "black" : "white"}
