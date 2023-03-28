@@ -1,15 +1,9 @@
+import { Platform, StyleSheet, Switch, Text, View } from 'react-native';
+
+import ProductList from './ProductList';
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { useColorScheme } from 'nativewind';
-import React from 'react';
-import { SafeAreaView, Switch, Text, View, StyleSheet, Platform } from 'react-native';
-import ProductList from './ProductList';
-
-
-const styles =  StyleSheet.create({
-  AndroidSafeArea: {
-    paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0
-  }
-});
 
 export default function App() {
   const { colorScheme, toggleColorScheme } = useColorScheme();
